@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Portfolio | Rems</title>
+    <link rel="icon" type="image/png" href="images/r-logo.png"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/unicons.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" href="css/tooplate-style.css">
+    
+<style>
+  /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  animation: slideIn 0.3s ease-out; /* Slide in animation */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin-top: 10%; /* 10% from the top */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  animation: slideDown 0.3s ease-out; /* Slide down animation */
+}
+
+/* Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Modal Header */
+.modal-content h2 {
+  margin-top: 0;
+}
+
+/* Modal Body */
+.modal-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.modal-content ul li {
+  margin-bottom: 10px;
+}
+
+.modal-content ul li a {
+  color: #007bff; /* Blue color */
+  text-decoration: none;
+}
+
+.modal-content ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Slide in animation */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Slide down animation */
+@keyframes slideDown {
+  from {
+    margin-top: -300px;
+  }
+  to {
+    margin-top: 10%;
+  }
+}
+
+</style>
+  </head>
+  <body>
+
+    <!-- MENU -->
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"> rems<span style="color:#ffc200;">.</span></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link"><span data-hover="About">About</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#project" class="nav-link"><span data-hover="Projects">Projects</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link"><span data-hover="Resume">Resume</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link"><span data-hover="Contact">Contact</span></a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-lg-auto">
+                    <div class="ml-lg-4">
+                      <div class="color-mode d-lg-flex justify-content-center align-items-center">
+                        <i class="color-mode-icon"></i>
+                        Color mode
+                      </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ABOUT -->
+    <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
+                    <div class="about-text">
+                        <small class="small-text">Welcome to <span class="mobile-block">my portfolio website!</span></small>
+                        <h1 class="animated animated-text">
+                            <span class="mr-2">Hey fellas, I'm</span>
+                                <div class="animated-info">
+                                    <span class="animated-item">Rems</span>
+                                    <span class="animated-item">Freelancer</span>
+                                    <!-- <span class="animated-item">Rapper</span> -->
+                                    <span class="animated-item">Programmer</span>
+
+                                </div>
+                        </h1>
+
+                        <p>I am an IT student with a strong passion for music, blending my technical skills with creativity to explore new possibilities in both fields.</p>
+                        
+                        <div class="custom-btn-group mt-4">
+                          <a href="resume/resume-remy-camiguel.pdf" class="btn mr-lg-2 custom-btn" download><i class='uil uil-file-alt'></i> Download Resume</a>
+                                <!-- Button to trigger the modal -->
+                              <a href="#" class="btn custom-btn custom-btn-bg custom-btn-link" id="hireMeBtn">Hire me</a>
+                        </div>
+                    </div>
+<!-- MODAL -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>Contact Information</h3>
+    <ul>
+      <li><a href="https://www.facebook.com/rxmdyrems" target="_blank">Facebook</a></li>
+      <li><a href="https://www.instagram.com/rmdyrems" target="_blank">Instagram</a></li>
+      <li>Phone: 09463330110</li>
+    </ul>
+    <hr>
+    <div class="modal-paragraph">
+      <p>I'm here to help with school projects, homework, and even building simple systems for your capstone projects, and create a simple personal websites. If you need assistance or want more information, just give me a shout. I've got you covered! We can talk about it.</p>
+    </div>
+  </div>
+</div>
+
+                    
+                </div>
+
+                <div class="col-lg-5 col-md-12 col-12">
+                    <div class="about-image svg">
+                        <img src="images/undraw/undraw_real_time_analytics_re_yliv.svg" class="img-fluid" alt="svg image">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+<!-- chatbot -->
+<!-- <script type="module">
+  import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0.1/dist/web.js'
+
+  Typebot.initBubble({
+    typebot: "rems-faq-upfiwof",
+    previewMessage: {
+      message: "Hi there!",
+      autoShowDelay: 10000,
+      avatarUrl:
+        "https://s3.fr-par.scw.cloud/typebot/public/typebots/xckese4srlac1ili1upfiwof/hostAvatar?v=1689610128292",
+    },
+    theme: {
+      button: { backgroundColor: "#ffc200" },
+      chatWindow: { backgroundColor: "#FFFFFF" },
+    },
+  });
+</script> -->
+<!-- chatbot -->
+    <!-- PROJECTS -->
+    <section class="project py-5" id="project">
+        <div class="container">
+                
+                <div class="row">
+                  <div class="col-lg-11 text-center mx-auto col-12">
+
+                      <div class="col-lg-8 mx-auto">
+                        <h2>Projects</h2>
+                      </div>
+
+                      <div class="owl-carousel owl-theme">
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="images/project/project-image01.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="images/project/project-image08.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="images/project/project-image09.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
+                        <!-- <div class="item">
+                          <div class="project-info">
+                            <img src="images/project/project-image01.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="images/project/project-image01.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="images/project/project-image01.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div> -->
+
+                        </div>
+                      </div>
+
+                  </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="resume">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-12">
+                  <h2 class="mb-4">Experiences</h2>
+
+                    <div class="timeline">
+                        <div class="timeline-wrapper">
+                             <div class="timeline-yr">
+                                  <!-- <span>2022</span> -->
+                             </div>
+                             <div class="timeline-info">
+                                  <h3><span>All Around job</span><small>@Sprint Asia</small></h3>
+                                  <p>From warehouses to offices and deliveries, I've embraced it all. Diverse experiences, endless growth.</p>
+                             </div>
+                        </div>
+
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <!-- <span>2022</span> -->
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>Editing Videos</span><small>mandaue city college</small></h3>
+                                <p>In 2nd year college, we had a subject for video and picture editing.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <!-- <span>2022</span> -->
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>Mixing Vocals</h3>
+                                <p>I learned to mix vocals with melodies in months.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <!-- <span>2022</span> -->
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>Composing<small></small></h3>
+                                <p>Using my creative thoughts, I compose my own song/s to express my emotion</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-12">
+                  <h2 class="mb-4 mobile-mt-2">Educations</h2>
+
+                    <div class="timeline">
+                        <div class="timeline-wrapper">
+                             <div class="timeline-yr">
+                                  <!-- <span>2017</span> -->
+                             </div>
+                             <div class="timeline-info">
+                                  <h3><span>Sagrada Elem School</span><small></small></h3>
+                                  <p>Sagrada Elementary School - 112333 · Page · Elementary School · Zone 5, Sagrada,, Baao, Philippines · See more about Sagrada Elementary School - 112333.</p>
+                             </div>
+                        </div>
+
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <!-- <span>2015</span> -->
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>Bais High School</span><small>Music</small></h3>
+                                <p>The Bais City National Science High School is a secondary public science high school system located in Bais, Negros Oriental, Philippines. </p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <!-- <span>2013</span> -->
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>UCLM</span><small>BSIT</small></h3>
+                                <p>A. C. Cortes Ave, Mandaue City, 6014 Cebu
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact py-5" id="contact">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-lg-5 mr-lg-5 col-12">
+            <div class="google-map w-100">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3431.637395037981!2d123.93181837742401!3d10.351790736520485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1689576328738!5m2!1sen!2sph" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+            <div class="contact-info d-flex justify-content-between align-items-center py-4 px-lg-5">
+                <div class="contact-info-item">
+                  <h3 class="mb-3 text-white">Say hello</h3>
+                  <p class="footer-text mb-0">+63 (946) 333 0110</p>
+                  <p><a href="mailto:remy.camigue@gmail.com">remy.camigue@gmail.com</a></p>
+                </div>
+
+                <ul class="social-links">
+                     <li><a href="https://www.facebook.com/realjoker2" class="uil uil-facebook" data-toggle="tooltip" data-placement="left" title="Facebook"></a></li>
+                     <li><a href="https://www.instagram.com/rmdyrems/" class="uil uil-instagram" data-toggle="tooltip" data-placement="left" title="Instagram"></a></li>
+                     <li><a href="https://www.youtube.com/@rmdyrems/videos" class="uil uil-youtube" data-toggle="tooltip" data-placement="left" title="Youtube"></a></li>
+                </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-12">
+            <div class="contact-form">
+              <h2 class="mb-4">Interested to work together? Let's talk.</h2>
+
+                <form action="https://formsubmit.co/remy.camigue@gmail.com" method="POST">
+                        <input class="form-control" placeholder="Juan Dela Cruz" name="name" required>
+                        <input class="form-control" placeholder="your@email.com" type="email" name="email" required>
+                        <input style="height: 20vh;" class="form-control" placeholder="Your message here..." type="message" name="message" required>
+                        <button class="send-btn"  type="submit">Send</button>
+                  </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+     <footer class="footer py-5">
+          <div class="container">
+               <div class="row">
+                    <div class="col-lg-12 col-12">
+                      <div class="navbar-footer">
+                        <div class="links-footer">
+                          <ul class="footer-ul">
+                              <a href="">Home</a>
+                              <a href="">Project</a>
+                              <a href="">Resume</a>
+                              <a href="">Contact</a>
+                         </ul>
+                        </div>
+                        <div class="name-logo-footer">
+                          <p style="font-weight: bolder; font-size: 5vh;" href="index.html"> Rems<span style="color:#ffc200;">.</span></p>
+                        </div>
+                        <p class="copyright-text text-center">Copyright &copy; 2019 Rems . All rights reserved</p>
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/Headroom.js"></script>
+    <script src="js/jQuery.headroom.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js"></script>
+
+    
+<!-- JavaScript for modal functionality -->
+<script>
+  // Get the modal
+  var modal = document.getElementById("contactModal");
+  
+  // Get the button that opens the modal
+  var btn = document.getElementById("hireMeBtn");
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks on the button, open the modal
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+  </body>
+</html>
